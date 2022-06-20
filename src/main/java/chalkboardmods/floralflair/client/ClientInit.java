@@ -7,71 +7,56 @@ import net.minecraft.client.render.RenderLayer;
 
 public class ClientInit implements ClientModInitializer {
 
-    @Override
-    public void onInitializeClient() {
-        // Foxnip
-        BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.FOXNIP, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.POTTED_FOXNIP, RenderLayer.getCutout());
+	@Override
+	public void onInitializeClient() {
 
-        // Frosted Foxnip
-        BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.FROSTED_FOXNIP, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.POTTED_FROSTED_FOXNIP, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.FOXNIP, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.POTTED_FOXNIP, RenderLayer.getCutout());
 
-        // Rose
-        BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.ROSE, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.POTTED_ROSE, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.FROSTED_FOXNIP, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.POTTED_FROSTED_FOXNIP, RenderLayer.getCutout());
 
-        // Jungle Gem
-        BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.JUNGLE_GEM, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.POTTED_JUNGLE_GEM, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.ROSE, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.POTTED_ROSE, RenderLayer.getCutout());
 
-        // Sunset Poppy
-        BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.SUNSET_POPPY, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.POTTED_SUNSET_POPPY, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.JUNGLE_GEM, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.POTTED_JUNGLE_GEM, RenderLayer.getCutout());
 
-        // Pulse Petal
-        BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.PULSE_PETAL, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.POTTED_PULSE_PETAL, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.SUNSET_POPPY, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.POTTED_SUNSET_POPPY, RenderLayer.getCutout());
 
-        // Fairy Blossom
-        BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.FAIRY_BLOSSOM, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.PULSE_PETAL, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.POTTED_PULSE_PETAL, RenderLayer.getCutout());
 
-        // Muscari
-        BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.MUSCARI, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.FAIRY_BLOSSOM, RenderLayer.getCutout());
 
-        // Purpureum
-        BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.PURPUREUM, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.MUSCARI, RenderLayer.getCutout());
 
-        // Midnight_orchid
-        BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.MIDNIGHT_ORCHID, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.POTTED_MIDNIGHT_ORCHID, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.PURPUREUM, RenderLayer.getCutout());
 
-        // Hyacinth
-        BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.HYACINTH, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.POTTED_HYACINTH, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.MIDNIGHT_ORCHID, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.POTTED_MIDNIGHT_ORCHID, RenderLayer.getCutout());
 
-        // Anthurium
-        BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.ANTHURIUM, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.POTTED_ANTHURIUM, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.HYACINTH, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.POTTED_HYACINTH, RenderLayer.getCutout());
 
-        // Snow_fall_flower
-        BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.SNOW_FALL_FLOWER, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.POTTED_SNOW_FALL_FLOWER, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.ANTHURIUM, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.POTTED_ANTHURIUM, RenderLayer.getCutout());
 
-        // Spiked_tulip
-        BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.SPIKED_TULIP, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.POTTED_SPIKED_TULIP, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.SNOW_FALL_FLOWER, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.POTTED_SNOW_FALL_FLOWER, RenderLayer.getCutout());
 
-        // Stonnete
-        BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.STONNETE, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.POTTED_STONNETE, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.SPIKED_TULIP, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.POTTED_SPIKED_TULIP, RenderLayer.getCutout());
 
-        // Lunula
-        BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.LUNULA, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.POTTED_LUNULA, RenderLayer.getCutout());
-        // Scilla
-        BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.SCILLA, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.POTTED_SCILLA, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.STONNETE, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.POTTED_STONNETE, RenderLayer.getCutout());
+
+		BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.LUNULA, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.POTTED_LUNULA, RenderLayer.getCutout());
+
+		BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.SCILLA, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(FloralBlocks.POTTED_SCILLA, RenderLayer.getCutout());
 
 //        FabricModelPredicateProviderRegistry.register(Item.fromBlock(FloralBlocks.LUNULA), new Identifier("time"), new UnclampedModelPredicateProvider(){
 //            private double time;
@@ -107,5 +92,6 @@ public class ClientInit implements ClientModInitializer {
 //                return this.time;
 //            }
 //        });
-    }
+	}
+
 }
