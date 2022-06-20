@@ -11,20 +11,17 @@ import net.minecraft.world.WorldView;
 
 public class SpikedTulipBlock extends FlowerBlock {
 
-	public SpikedTulipBlock(StatusEffect suspiciousStewEffect, int effectDuration, Settings settings) {
-		super(suspiciousStewEffect, effectDuration, settings);
-	}
-
-	@Override
-	protected boolean canPlantOnTop(BlockState floor, BlockView world, BlockPos pos) {
-		return floor.isOf(Blocks.DRIPSTONE_BLOCK) || floor.isIn(BlockTags.BASE_STONE_OVERWORLD);
-	}
-
-	@Override
-	public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
-		BlockPos blockPos = pos.down();
-		BlockState blockState = world.getBlockState(blockPos);
-		return blockState.isOf(Blocks.DRIPSTONE_BLOCK) || blockState.isIn(BlockTags.BASE_STONE_OVERWORLD);
-	}
-
+    public SpikedTulipBlock(StatusEffect suspiciousStewEffect, int effectDuration, Settings settings) {
+        super(suspiciousStewEffect, effectDuration, settings);
+    }
+    @Override
+    protected boolean canPlantOnTop(BlockState floor, BlockView world, BlockPos pos) {
+        return floor.isOf(Blocks.DRIPSTONE_BLOCK) || floor.isIn(BlockTags.BASE_STONE_OVERWORLD);
+    }
+    @Override
+    public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
+        BlockPos blockPos = pos.down();
+        BlockState blockState = world.getBlockState(blockPos);
+        return blockState.isOf(Blocks.DRIPSTONE_BLOCK)|| blockState.isIn(BlockTags.BASE_STONE_OVERWORLD);
+    }
 }
